@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_about"
+        android:title="@string/action_about"
+        android:icon="@android:drawable/ic_dialog_info"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_all_items"
+        android:title="@string/show_all_buildings"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_choose_category"
+        android:title="@string/choose_a_category"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/my_building"
+        android:title="@string/my_building"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_sort_atoz"
+       android:title="@string/sort_atoz"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_sort_ztoa"
+        android:title="@string/sort_ztoa"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.algonquinlive.meng0028.doorsopenottawa.EditBuildingActivity">
+
+    <TextView
+        android:id="@+id/labelNameOld"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Building Name"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/editNameOld"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelNameOld" />
+
+    <TextView
+        android:id="@+id/labelDescription"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Building Description"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNameOld" />
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelDescription" />
+
+    <CheckBox
+        android:id="@+id/isBuildingNew"
+        android:layout_width="360dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Is Building New ?"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDescription" />
+<LinearLayout
+    android:id="@+id/saturdayStartTime"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:textAlignment="textStart"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/isBuildingNew"
+
+
+    >
+    <TextView
+        android:id="@+id/saturdayStartTimeLabel"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="Saturday Start Time:"
+         />
+
+    <EditText
+        android:id="@+id/editSaturdayStartTime"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:hint="yyyy-mm-dd hh:mm"
+        android:inputType="text"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/saturdayEndTime"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="textStart"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saturdayStartTime"
+
+
+        >
+        <TextView
+            android:id="@+id/saturdayEndTimeLabel"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="Saturday End Time:"
+            />
+
+        <EditText
+            android:id="@+id/editSaturdayEndTime"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:hint="yyyy-mm-dd hh:mm"
+            android:inputType="text"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sundayStartTime"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="textStart"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saturdayEndTime"
+
+
+        >
+        <TextView
+            android:id="@+id/sundayStartTimeLabel"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="Sunday Start Time:"
+            />
+
+        <EditText
+            android:id="@+id/editSundayStartTime"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:hint="yyyy-mm-dd hh:mm"
+            android:inputType="text"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sundayEndTime"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="textStart"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sundayStartTime"
+
+
+        >
+        <TextView
+            android:id="@+id/sundayEndTimeLabel"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="Sunday End Time:"
+            />
+
+        <EditText
+            android:id="@+id/editSundayEndTime"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:hint="yyyy-mm-dd hh:mm"
+            android:inputType="text"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="textStart"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sundayEndTime"
+
+
+        >
+
+
+
+    <Button
+        android:id="@+id/saveOldBtn"
+        android:layout_width="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onPressedUpdate"
+        android:background="@color/colorPrimary"
+        android:text="SAVE"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/cancelOldBtn"
+        android:layout_width="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onPressedCancel"
+        android:background="@color/colorPrimary"
+        android:text="CANCEL"
+        app:layout_constraintRight_toRightOf="parent" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onPressedDelete"
+        android:background="@color/deleteBtn"
+        android:text="DELETE"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/buttons"/>
+</android.support.constraint.ConstraintLayout>
